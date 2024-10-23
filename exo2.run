@@ -1,0 +1,35 @@
+# automatically generated on Wed Sep 27 2023 at 18:35:03 PM CEST
+reset;
+model ../monampl/projet-m2/exo2-victorcarine/exo2.mod;
+data ../monampl/projet-m2/exo2-victorcarine/exo2.dat;
+option solver cplex;
+solve;
+
+display tonnes;
+#display statut_dep; #q4
+display cout_total;
+
+#pour la question 2, tester differentes modifications...
+#set valeurs :=5..55 by 10;
+#param cap_u{USINES};
+#param cap_d{DEPOTS};
+#param objectif{valeurs};
+#let {k in USINES} cap_u[k] := cap_usi[k];
+#let {l in DEPOTS} cap_d[l] := cap_dep[l];
+#param lambda;
+
+#for{i in valeurs}{
+#	let lambda := i;
+	#if(lambda >= 45) then {let cap_usi["Liv"] := cap_u["Liv"]+20;}
+
+	#for{d in DEPOTS}{
+	#	let cap_dep[d] := cap_d[d]+lambda;
+	#}
+#	solve;
+#	let objectif[i] := cout_total;
+#	display lambda;
+#	display tonnes;
+#	display cap_usi;
+#	display cap_dep;
+#	display objectif[i];
+#}

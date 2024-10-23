@@ -1,0 +1,59 @@
+include ../monampl/projet-m2/exo2-victorcarine/exo2.run
+
+Presolve eliminates 5 constraints and 9 variables.
+Adjusted problem:
+20 variables, all linear
+12 constraints, all linear; 43 nonzeros
+1 linear objective; 20 nonzeros.
+
+solve
+optimal solution; objective 246
+9 dual simplex iterations (1 in phase I)
+display
+tonnes [*,*] (tr)
+:    Bir  Bri  Exe  Liv  Lon  New    :=
+Bir   .    50   .     0   .    .
+C1     0    0   .    50   .    .
+C2     0   .    .    .     0   10
+C3     0   .    40    0    0    0
+C4     0   .     0   35   .     0
+C5    50   .     0   .    10   .
+C6    .    .     0    0   20    0
+Exe   .    40   .     0   .    .
+Lon   .    30   .     0   .    .
+New   .    .    .    10   .    .
+;
+
+display
+cout_total = 246
+# ampl:  option show_stats 1; option display_eps .000001; print $version;
+AMPL Student Version 20030724 (MS VC++ 6.0)
+# ampl:include ../monampl/projet-m2/exo2-victorcarine/exo2.run
+
+Presolve eliminates 5 constraints and 9 variables.
+Adjusted problem:
+20 variables, all linear
+12 constraints, all linear; 43 nonzeros
+1 linear objective; 20 nonzeros.
+
+solve
+optimal solution; objective 246
+9 dual simplex iterations (1 in phase I)
+display
+tonnes [*,*] (tr)
+:    Bir  Bri  Exe  Liv  Lon  New    :=
+Bir   .    50   .     0   .    .
+C1     0    0   .    50   .    .
+C2     0   .    .    .     0   10
+C3     0   .    40    0    0    0
+C4     0   .     0   35   .     0
+C5    50   .     0   .    10   .
+C6    .    .     0    0   20    0
+Exe   .    40   .     0   .    .
+Lon   .    30   .     0   .    .
+New   .    .    .    10   .    .
+;
+
+display
+cout_total = 246
+# ampl:  
