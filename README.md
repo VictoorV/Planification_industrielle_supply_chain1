@@ -1,2 +1,4 @@
 # Planification_industrielle
-J'ai travaillé sur la planification optimale du fonctionnement d'une usine, en maximisant les profits tout en prenant en compte les contraintes de production, de stockage et de maintenance des machines. À travers une modélisation mathématique en langage AMPL, j'ai analysé les performances de l'usine, évalué l'impact des variations de données et étudié les opportunités d'acquisition de nouvelles machines. Cette approche rigoureuse a permis de maximiser l'efficacité économique.
+Ce projet consiste à résoudre un problème de minimisation des coûts de transport via une modélisation sur AMPL, dans le cadre de la distribution d’un produit fabriqué dans deux usines vers six clients distincts. L'utilisation de dépôts intermédiaires est envisagée, avec quatre dépôts disponibles. L'objectif est d'optimiser les coûts tout en respectant les capacités de production, les contraintes des dépôts et les besoins des clients, en prenant en compte les différentes routes possibles et leurs coûts associés.
+
+![image](https://github.com/user-attachments/assets/3b2edfc4-fd97-47ca-8110-32ab539c790c)
